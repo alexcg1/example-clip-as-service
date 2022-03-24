@@ -9,6 +9,6 @@
 
 ## Run CLIP-as-service client
 
-1. `python run_once.py` to download initial datasets
+1. `python run_once.py` to download initial datasets and store in SQLite for faster loading in frontend
 2. In a new terminal, `streamlit run frontend.py`
 3. Set server in the sidebar
