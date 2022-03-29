@@ -27,7 +27,7 @@ st.header("CLIP-as-service")
 st.sidebar.header("Options")
 mode = st.sidebar.radio(label="Input type", options=["Text-to-image", "Image-to-text"])
 server = st.sidebar.text_input(
-    label="CLIP-as-service server", value="grpc://0.0.0.0:51000"
+    label="CLIP-as-service server", value=clip_server
 )
 c = Client(server)
 

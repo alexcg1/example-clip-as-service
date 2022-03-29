@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  frontend:
+    build: frontend
+    environment:
+      - SERVER=server
+    ports:
+      - 8502:8502
+    depends_on:
+      - server
+    volumes:
+      - ./frontend:/workspace
+      #- ./data:/data
+    restart: always
+
+  server:
+    build: server
+    ports:
+      - 51000:51000
+    #volumes:
+      #- ./embeddings:/embeddings
+      #- ./data:/data
+    restart: always

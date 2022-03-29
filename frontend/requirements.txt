@@ -1,0 +1,2 @@
+clip-client==0.1.5
+streamlit==1.7.0

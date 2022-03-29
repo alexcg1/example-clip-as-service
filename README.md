@@ -3,10 +3,6 @@
 1. Set up virtualenv
 2. `pip install -r requirements.txt`
 
-## Run CLIP-as-service server
-
-`sh server.sh`
-
 ## Run CLIP-as-service client
 
 1. `python run_once.py` to download initial datasets and store in SQLite for faster loading in frontend
