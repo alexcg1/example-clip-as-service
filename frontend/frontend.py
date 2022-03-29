@@ -26,7 +26,7 @@ img_da, txt_da = get_docs()
 st.header("CLIP-as-service")
 
 st.sidebar.header("What is CLIP-as-service?")
-st.markdown("[**CLIP-as-service**](https://clip-as-service.jina.ai/) is a low-latency high-scalability service from [Jina AI](https://github.com/jina-ai/) for embedding images and text. It can be easily integrated as a microservice into [neural search](https://docs.jina.ai/get-started/neural-search/) solutions.")
+st.sidebar.markdown("[**CLIP-as-service**](https://clip-as-service.jina.ai/) is a low-latency high-scalability service from [Jina AI](https://github.com/jina-ai/) for embedding images and text. It can be easily integrated as a microservice into [neural search](https://docs.jina.ai/get-started/neural-search/) solutions.")
 
 st.sidebar.header("Options")
 mode = st.sidebar.radio(label="Input type", options=["Text-to-image", "Image-to-text"])
